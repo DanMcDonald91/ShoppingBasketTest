@@ -13,5 +13,21 @@ public class ShoppingBasket {
     public ShoppingBasket() {
         this.items = new ArrayList<Item>();
     }
+
+    public void addItem(Item item) {
+        items.add(item);
+    }
+
+    public void RemoveItem(Item item) {
+        items.remove(item);
+    }
+
+    public void EmptyBasket(Item item) {
+        items.clear();
+    }
+
+    public int getNumbeOfItems() {
+        return items.size();
+    }
 }
 g
