@@ -18,16 +18,26 @@ public class ShoppingBasket {
         items.add(item);
     }
 
-    public void RemoveItem(Item item) {
+    public void removeItem(Item item) {
         items.remove(item);
     }
 
-    public void EmptyBasket(Item item) {
+    public void emptyBasket() {
         items.clear();
     }
 
     public int getNumbeOfItems() {
         return items.size();
     }
+
+    public int totalPrice(){
+        int total = 0;
+        for (Item item : items) {
+            total += item.getPrice();
+        }
+        return total;
+        }
+    }
+
+
 }
-g

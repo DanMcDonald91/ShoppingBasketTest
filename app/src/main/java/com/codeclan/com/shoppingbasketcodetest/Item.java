@@ -35,7 +35,7 @@ public abstract class Item {
         return price;
     }
 
-    public void SetPrice(int price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 }
